@@ -19,6 +19,10 @@ h3 {
     margin-bottom: 0px;
     margin-top: 0px;
 }
+h4 {
+    font-size: 1rem;
+    margin: 0 0 0 0;
+}
 p {
     font-size: 1rem;
     margin: 0 0 0 0;
@@ -189,6 +193,59 @@ body #main-content {
 .projects {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+}
+.projects h3 {
+    align-self: start;
+    margin-bottom: 16px;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    flex: 1 1 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.card .orangeBox {
+    width: 12px;
+    height: 100%;
+    background-color: orange;
+}
+
+.card .mainCardArea {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 12px 16px 12px 16px;
+}
+
+.card p {
+    flex: 1 1 0;
+    color: grey
+}
+
+.card .cardicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width:100%
+}
+
+.cardicons svg {
+    width: 16px;
+    fill: black;
 }
