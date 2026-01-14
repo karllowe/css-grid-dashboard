@@ -2,6 +2,8 @@
     font-size: 12px;
     --sidePadding: 16px;
     --topPadding: 12px;
+    
+    --light-grey: #E2E8F0;
 }
 
 h1 {
@@ -87,3 +89,49 @@ body #main-content {
     margin-right: 8px;
 }
 
+#header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 28px 0 28px;;
+}
+
+#header .top, #header .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .search {
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+    flex: 1 1 0;
+    max-width: 600px;
+
+}
+.search input {
+    border-radius: 50vh;
+    border: none;
+    width: max(300px, 100%);
+    background-color: var(--light-grey);
+
+}
+
+#header svg {
+    fill: black;
+    width: 16px;
+}
+#header .userToolBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
+}
+
+#main-content {
+    background-color: var(--light-grey)
+}
