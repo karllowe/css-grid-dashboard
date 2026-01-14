@@ -80,7 +80,7 @@ body #main-content {
 
 .sidebarNav ul {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 36px;
     margin-left: var(--sidePadding);
     padding-left: 0px;
@@ -103,8 +103,9 @@ body #main-content {
     position:relative;
     display: flex;
     flex-direction: column;
+    gap: 18px;
     justify-content: space-around;
-    padding: 0 28px 0 28px;;
+    padding: 12px 28px 12px 28px;
 }
 
 #header .top, #header .bottom {
@@ -176,5 +177,18 @@ body #main-content {
 }
 
 #main-content {
-    background-color: var(--light-grey)
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: var(--topPadding) var(--sidePadding) var(--topPadding) var(--sidePadding);
+    gap: var(--sidePadding)
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
